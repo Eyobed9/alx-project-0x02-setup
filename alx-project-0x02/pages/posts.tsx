@@ -4,32 +4,35 @@ import { PostProps } from "@/interfaces";
 
 const Posts: React.FC<{ posts: PostProps[] }> = ({ posts }) => {
 	return (
-		<div className="flex flex-col h-screen">
-			<main className="p-4 mt-5">
-				<div className="flex justify-center">
-					<h1 className="text-2xl shadow-2xl text-center ">
-						Post Contents
-					</h1>
-				</div>
-				<div className="grid grid-cols-3 gap-8">
-					{posts?.map(
-						(
-							{ title, body, userId, id }: PostProps,
-							key: number
-						) => (
-							<PostCard
-								title={title}
-								body={body}
-								userId={userId}
-								id={id}
-								key={key}
-								content={""}
-							/>
-						)
-					)}
-				</div>
-			</main>
-		</div>
+		<>
+			<Header />
+			<div className="flex flex-col h-screen">
+				<main className="p-4 mt-5">
+					<div className="flex justify-center">
+						<h1 className="text-2xl shadow-2xl text-center ">
+							Post Contents
+						</h1>
+					</div>
+					<div className="grid grid-cols-3 gap-8">
+						{posts?.map(
+							(
+								{ title, body, userId, id }: PostProps,
+								key: number
+							) => (
+								<PostCard
+									title={title}
+									body={body}
+									userId={userId}
+									id={id}
+									key={key}
+									content={""}
+								/>
+							)
+						)}
+					</div>
+				</main>
+			</div>
+		</>
 	);
 };
 

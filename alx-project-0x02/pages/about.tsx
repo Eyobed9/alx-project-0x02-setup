@@ -1,9 +1,11 @@
 import Button from "@/components/common/Button";
+import Header from "@/components/layout/Header";
 import React from "react";
 
 const about: React.FC = () => {
 	return (
 		<>
+			<Header />
 			<h1 className="text-2xl shadow-2xl text-center mt-20">
 				About Page
 			</h1>

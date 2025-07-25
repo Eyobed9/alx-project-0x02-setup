@@ -1,5 +1,6 @@
 import Card from "@/components/common/Card";
 import PostModal from "@/components/common/PostModal";
+import Header from "@/components/layout/Header";
 import { CardProps } from "@/interfaces";
 import React, { useState } from "react";
 
@@ -13,6 +14,7 @@ const HomePage: React.FC<{ posts: CardProps[] }> = ({ posts }) => {
     };
     return (
         <>
+        	<Header />
             <div className="flex justify-center gap-15 mt-20 mx-20">
                 <h1 className="text-2xl shadow-2xl text-center ">HomePage</h1>
                 <button
