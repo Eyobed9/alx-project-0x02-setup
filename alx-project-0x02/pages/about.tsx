@@ -10,7 +10,7 @@ const about: React.FC = () => {
 			<div className="flex flex-col gap-4 justify-center items-center mt-10">
 				<Button size="px-3 py-1 text-sm" shape="rounded-sm" />
 				<Button size="px-5 py-2 text-base" shape="rounded-md" />
-				<Button size="px-6 py-3 text-lg" shape="rounded-lg" />
+				<Button size="px-6 py-3 text-lg" shape="rounded-full" />
 			</div>
 		</>
 	);
