@@ -20,6 +20,8 @@ type medium = "px-5 py-2 text-base";
 type large = "px-6 py-3 text-lg";
 
 // Button props
+
+// export interface ButtonProps
 export type ButtonProps = {
     size: small | medium | large;
     shape: shape;
