@@ -1,4 +1,5 @@
 import PostCard from "@/components/common/PostCard";
+import Header from "@/components/layout/Header";
 
 import { PostProps } from "@/interfaces";
 
