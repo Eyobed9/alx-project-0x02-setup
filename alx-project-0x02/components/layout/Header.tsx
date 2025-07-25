@@ -6,12 +6,26 @@ const Header: React.FC = () => {
 			<nav>
 				<ul className="flex gap-15 justify-center items-center text-xl mt-5">
 					<li>
-						<Link href="/home" className="text-white hover:text-blue-500">
+						<Link
+							href="/home"
+							className="text-white hover:text-blue-500"
+						>
 							Home
 						</Link>
 					</li>
 					<li>
-						<Link href="/about" className="text-white hover:text-blue-500">
+						<Link
+							href="/posts"
+							className="text-white hover:text-blue-500"
+						>
+							Posts
+						</Link>
+					</li>
+					<li>
+						<Link
+							href="/about"
+							className="text-white hover:text-blue-500"
+						>
 							About
 						</Link>
 					</li>
