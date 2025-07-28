@@ -1,4 +1,5 @@
 // Card interface
+// export interface CardProps
 export type CardProps = {
     title: string;
     content: string;
